@@ -1,6 +1,3 @@
-<script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 
 # Forecast the 2015–2016 Influenza Season Collaborative Challenge
 
@@ -36,25 +33,28 @@ Forecasts should be submitted to flucontest@cdc.gov using the provided .csv spre
 **Evaluation Criteria:**
 
 Probabilistic forecasts
-            All forecasts will be evaluated using the weighted observations pulled from the ILINet system during week 28, and the logarithmic scoring rule will be used to measure the accuracy of the probability distribution of a forecast. If $p$ is the set of probabilities for a given forecast, and $p_i$  is the probability assigned to the observed outcome, $i$ , the logarithmic score is: 
+            All forecasts will be evaluated using the weighted observations pulled from the ILINet system during week 28, and the logarithmic scoring rule will be used to measure the accuracy of the probability distribution of a forecast. If p is the set of probabilities for a given forecast, and ![$p_i$](https://latex.codecogs.com/gif.latex?%5Cinline%20p_i)  is the probability assigned to the observed outcome, i, the logarithmic score is: 
 
-$$
+
+
+![$$
 S(p,i)=\ln(p_i)
-$$
-             
-            The probability assigned to that correct bin (based on the weighted ILINet value) plus the probability assigned to the preceding and proceeding bins will be summed to determine the probability assigned to the observed outcome. If the correct bin is the first or last bin, the probabilities will be summed over the first three or last three bins, respectively. In the case of multiple peak weeks, the probability assigned to the bins containing the
+$$](https://latex.codecogs.com/gif.latex?%5Clarge%20S%28p%2Ci%29%3Dlog%28p_i%29)
+            
+
+The probability assigned to that correct bin (based on the weighted ILINet value) plus the probability assigned to the preceding and proceeding bins will be summed to determine the probability assigned to the observed outcome. If the correct bin is the first or last bin, the probabilities will be summed over the first three or last three bins, respectively. In the case of multiple peak weeks, the probability assigned to the bins containing the
             peak weeks and the preceding and proceeding  bins will be summed. Undefined natural logs (which occur when the probability assigned to the observed outcomes was 0) will be assigned a value of -10. Forecasts which are not submitted (e.g. if a week is missed) or that are incomplete (e.g. sum of probabilities greater than 1.1) will also be assigned a value of -10. Logarithmic scores will be averaged across different time periods, the seasonal targets, the
             four-week ahead targets, and locations to provide both specific and generalized measures of model accuracy. 
 
 ** Example:** 
 
-A forecast predicts there is a probability of 0.2 (i.e. a 20% chance) that the flu season starts on week 44, a 0.3 probability that it starts on week 45, and a 0.1 probability that it starts on week 46 with the other 0.4 (40%) distributed across other weeks according to the forecast. Once the flu season has started, the prediction can be evaluated, and the ILINet data show that the flu season started on week 45. The probabilities for week 44, 45, and 46 would be summed, and the forecast would receive a score of $log(0.6) = -0.51$. If the season started on another week, the score would be calculated on the probability assigned to that week plus the values assigned to the preceding and proceeding week.
+A forecast predicts there is a probability of 0.2 (i.e. a 20% chance) that the flu season starts on week 44, a 0.3 probability that it starts on week 45, and a 0.1 probability that it starts on week 46 with the other 0.4 (40%) distributed across other weeks according to the forecast. Once the flu season has started, the prediction can be evaluated, and the ILINet data show that the flu season started on week 45. The probabilities for week 44, 45, and 46 would be summed, and the forecast would receive a score of log(0.6) = -0.51. If the season started on another week, the score would be calculated on the probability assigned to that week plus the values assigned to the preceding and proceeding week.
 
-            Unlike last year, forecast accuracy will be measured by log score only. Nonetheless, forecasters are requested to continue to submit point predictions, which should aim to minimize the Absolute Error (AE). Absolute error (AE) is the absolute difference between a prediction $\hat{y}$ and an observation $y$:  
+            Unlike last year, forecast accuracy will be measured by log score only. Nonetheless, forecasters are requested to continue to submit point predictions, which should aim to minimize the Absolute Error (AE). Absolute error (AE) is the absolute difference between a prediction ![$\hat{y}$](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Chat%7By%7D) and an observation y:
 
-$$
+![$$
 AE(\hat{y},y)=|\hat{y}-y|.
-$$
+$$](https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cmathrm%7BAE%7D%28%5Chat%7By%7D%2Cy%29%3D%7C%5Chat%7By%7D-y%7C.)
 
 For example, a forecast predicts that the flu season will start on week 45; flu season actually begins on week 46. The absolute error of the prediction is |45-46| = 1 week.
 
