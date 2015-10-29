@@ -1,4 +1,3 @@
-
 # Forecast the 2015–2016 Influenza Season Collaborative Challenge
 
 **Objectives:**
