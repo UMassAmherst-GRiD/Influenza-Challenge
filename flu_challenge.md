@@ -50,7 +50,7 @@ The probability assigned to that correct bin (based on the weighted ILINet value
 
 A forecast predicts there is a probability of 0.2 (i.e. a 20% chance) that the flu season starts on week 44, a 0.3 probability that it starts on week 45, and a 0.1 probability that it starts on week 46 with the other 0.4 (40%) distributed across other weeks according to the forecast. Once the flu season has started, the prediction can be evaluated, and the ILINet data show that the flu season started on week 45. The probabilities for week 44, 45, and 46 would be summed, and the forecast would receive a score of log(0.6) = -0.51. If the season started on another week, the score would be calculated on the probability assigned to that week plus the values assigned to the preceding and proceeding week.
 
-            Unlike last year, forecast accuracy will be measured by log score only. Nonetheless, forecasters are requested to continue to submit point predictions, which should aim to minimize the Absolute Error (AE). Absolute error (AE) is the absolute difference between a prediction ![$\hat{y}$](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Chat%7By%7D) and an observation y:
+Unlike last year, forecast accuracy will be measured by log score only. Nonetheless, forecasters are requested to continue to submit point predictions, which should aim to minimize the Absolute Error (AE). Absolute error (AE) is the absolute difference between a prediction ![$\hat{y}$](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Chat%7By%7D) and an observation y:
 
 ![$$
 AE(\hat{y},y)=|\hat{y}-y|.
@@ -60,4 +60,4 @@ For example, a forecast predicts that the flu season will start on week 45; flu 
 
 **Publication of forecasts:**
 
-            All participants provide consent that their forecasts can be published in real-time on a central website and, after the season ends, in a scientific journal describing the results of the challenge. The forecasts can be attributed to a team name (e.g. John Doe University) or anonymous (e.g. Team A). No participating team can publish the results of another team’s model in any form without the team’s consent. The manuscript describing the accuracy of forecasts across teams will be coordinated by a representative from CDC.
+All participants provide consent that their forecasts can be published in real-time on a central website and, after the season ends, in a scientific journal describing the results of the challenge. The forecasts can be attributed to a team name (e.g. John Doe University) or anonymous (e.g. Team A). No participating team can publish the results of another team’s model in any form without the team’s consent. The manuscript describing the accuracy of forecasts across teams will be coordinated by a representative from CDC.
