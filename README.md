@@ -1,4 +1,4 @@
-
+# Kostis is the Oracle of LGRT
 # Getting the data 
 
 ```
