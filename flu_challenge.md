@@ -1,3 +1,7 @@
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 # Forecast the 2015–2016 Influenza Season Collaborative Challenge
 
 **Objectives:**
@@ -29,9 +33,9 @@ Forecasts should be submitted to flucontest@cdc.gov using the provided .csv spre
             “EW42-JDU-2015-10-26.xls” where EW is the latest week of ILINet data used in the forecast, JDU is the name of the team making the submission (e.g. John Doe University), and 2015-10-26 is the date of submission. The Pr(none) field in the spreadsheet is to indicate if no influenza season is forecasted (e.g. the ILINet value never reaches or exceeds the baseline for at least three consecutive weeks during the season). This value should be used to indicate no season for the
             season onset. Forecasts for peak percent and for 4-weeks-ahead should be provided in 0.5 percentage point semi-open intervals (e.g. probability 0.6 that 3%<= ILINet peak <3.5%). 
 
-**Evaluation Criteria:  **
+**Evaluation Criteria:**
 
-            Probabilistic forecasts
+Probabilistic forecasts
             All forecasts will be evaluated using the weighted observations pulled from the ILINet system during week 28, and the logarithmic scoring rule will be used to measure the accuracy of the probability distribution of a forecast. If $p$ is the set of probabilities for a given forecast, and $p_i$  is the probability assigned to the observed outcome, $i$ , the logarithmic score is: 
 
 $$
@@ -56,5 +60,4 @@ For example, a forecast predicts that the flu season will start on week 45; flu 
 
 **Publication of forecasts:**
 
-            All participants provide consent that their forecasts can be published in real-time on a central website and, after the season ends, in a scientific journal describing the results of the challenge. The forecasts can be attributed to a team name (e.g. John Doe University) or anonymous (e.g. Team A). No participating team can publish the results of another team’s model in any form without the team’s consent. The manuscript describing the accuracy of forecasts across teams
-            will be coordinated by a representative from CDC.
+            All participants provide consent that their forecasts can be published in real-time on a central website and, after the season ends, in a scientific journal describing the results of the challenge. The forecasts can be attributed to a team name (e.g. John Doe University) or anonymous (e.g. Team A). No participating team can publish the results of another team’s model in any form without the team’s consent. The manuscript describing the accuracy of forecasts across teams will be coordinated by a representative from CDC.
